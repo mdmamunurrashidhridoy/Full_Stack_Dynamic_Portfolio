@@ -69,3 +69,9 @@ img {
 .info li {
     margin-bottom: 0.5rem;
 }
+
+li.large {
+    font-size: 1.8em;
+    font-weight: bold;
+    transition: 0.3s ease;
+}

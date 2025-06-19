@@ -10,12 +10,12 @@
 <body>
     <nav>
         <div><h6>Hriody</h6></div>
-        <div>
-            <a href="">Home</a>
-            <a href="">Education</a>
-            <a href="">Skills</a>
-            <a href="">My Story</a>
-            <a href="">Contacts</a>
+        <div class="menu">
+            <a href="#" id="home">Home</a>
+            <a href="#">Education</a>
+            <a href="#">Skills</a>
+            <a href="#">My Story</a>
+            <a href="#">Contacts</a>
         </div>
     </nav>
 <h1>Hey, I am Hridoy🙋‍♂️,</h1>
@@ -30,6 +30,6 @@
       </ul>
       <p>Let's connect and create something great together!</p>
     </div>
-    
+    <script src="{{ asset('asset/js/script.js') }}">  </script>
 </body>
 </html>
