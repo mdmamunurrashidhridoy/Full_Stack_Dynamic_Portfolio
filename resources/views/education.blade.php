@@ -5,7 +5,7 @@
          .main-container {
              font-family: Arial, sans-serif;
              margin: 0;
-             padding: 0;      
+             padding: 0;
              display: flex;
              justify-content: center;
              align-items: center;
@@ -27,6 +27,11 @@
              flex: 1;
              padding: 20px;
          }
+         .infor {
+            flex: 1;
+             padding: 20px;
+             font-size: 12px;
+         }
 
          .divider {
              width: 1px;
@@ -34,13 +39,19 @@
          }
 
          h2 {
+             font-size: 2.4rem;
              text-align: center;
              border-bottom: 1px solid #eee;
              padding-bottom: 10px;
+             color: #4D4DFF;
          }
 
          ul {
              padding-left: 20px;
+         }
+
+         li {
+             font-size: 1.5rem;
          }
      </style>
  @endpush
@@ -50,20 +61,20 @@
              <div class="section">
                  <h2>Education</h2>
                  <ul>
-                     <li>BSc in Computer Science</li>
-                     <li>MSc in Data Science</li>
-                     <li>Diploma in UX Design</li>
+                     <li onclick="showinfo('IBN Taimiya School & College','GPA 5','2015-2016')">Secondary School Certificate(SSC)</li>
+                     <li onclick="showinfo('Comilla Government College','GPA 5', '2017-2018')">Higher Secondary Certificate(HSC)</li>
+                     <li onclick="showinfo('Daffodil International University', 3.9, '2022-Present')">Bachelor of Science</li>
                  </ul>
              </div>
              <div class="divider"></div>
-             <div class="section">
-                 <h2>Courses</h2>
-                 <ul>
-                     <li>Web Development Bootcamp</li>
-                     <li>Machine Learning Specialization</li>
-                     <li>Effective Communication</li>
-                 </ul>
+             <div class="infor" id='target'>
+
              </div>
+
          </div>
      </div>
+
+     <script>
+ 
+     </script>
  @endsection

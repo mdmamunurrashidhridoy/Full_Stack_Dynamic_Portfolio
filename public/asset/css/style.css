@@ -71,7 +71,8 @@ img {
 }
 
 li.large {
-    font-size: 1.8em;
+    font-size: 2rem;
     font-weight: bold;
     transition: 0.3s ease;
+    color: #4D4DFF;
 }

@@ -33,8 +33,10 @@
              border: 1px solid #ffffff55;
          }
 
-         .bubble:hover{
-            background-color: #4e54c8;
+         .bubble:hover {
+             background-color: #4e54c8;
+             width: 110px;
+             height: 110px;
          }
 
          /* Position bubbles in a circular layout */
@@ -87,7 +89,7 @@
          }
 
          .bubblecenter {
-            position: absolute;
+             position: absolute;
              width: 150px;
              height: 150px;
              background: #ADD8E6;
@@ -109,15 +111,39 @@
  @section('main-contents')
      <div class="container">
          <div class="bubble-container">
-             <div class="bubble">Python</div>
-             <div class="bubble">JavaScript</div>
-             <div class="bubble">Java</div>
-             <div class="bubble">C++</div>
-             <div class="bubble">Go</div>
-             <div class="bubble">Ruby</div>
-             <div class="bubble">Rust</div>
-             <div class="bubble">Swift</div>
+             <div class="bubble"
+                 data-info="Python is a versatile, high-level programming language great for web development, data science, and automation.">
+                 Python</div>
+             <div class="bubble"
+                 data-info="JavaScript is the language of the web, enabling interactive and dynamic web pages.">JavaScript
+             </div>
+             <div class="bubble"
+                 data-info="Java is a robust, platform-independent language used in enterprise applications and Android development.">
+                 Java</div>
+             <div class="bubble" data-info="C++ is a powerful language for system/software development and game programming.">
+                 C++</div>
+             <div class="bubble"
+                 data-info="Go is a statically typed language designed at Google, known for simplicity and concurrency.">Go
+             </div>
+             <div class="bubble"
+                 data-info="Ruby is a dynamic, object-oriented language famous for its elegant syntax and Rails framework.">
+                 Ruby</div>
+             <div class="bubble" data-info="Rust is a systems programming language focused on safety and performance.">Rust
+             </div>
+             <div class="bubble"
+                 data-info="Swift is Apple's programming language for iOS and macOS apps, combining performance and safety.">
+                 Swift</div>
              <div class="bubblecenter">Specialization</div>
          </div>
      </div>
+
+     <script>
+         var bubbles = document.querySelectorAll('.bubble');
+
+         for (var i = 0; i < bubbles.length; i++) {
+             bubbles[i].onclick = function() {
+                 alert(this.getAttribute('data-info'));
+             }
+         }
+     </script>
  @endsection

@@ -1,11 +1,9 @@
-menu = document.querySelector('.menu').children;
+menu = document.querySelector(".menu").children;
 for (i = 0; i < menu.length; i++) {
-    menu[i].addEventListener('click', function (event) {
+    menu[i].addEventListener("click", function (event) {
         console.log(event.target.innerText);
-    })
+    });
 }
-
-
 
 // function show(param){
 //     list = document.getElementsByTagName('li').children;
@@ -18,16 +16,27 @@ for (i = 0; i < menu.length; i++) {
 //     }
 // }
 
-
-const listItems = document.getElementsByTagName('li');
+const listItems = document.getElementsByTagName("li");
 
 for (let i = 0; i < listItems.length; i++) {
-    listItems[i].addEventListener('click', function () {
+    listItems[i].addEventListener("click", function () {
         // Remove 'large' class from all other list items
         for (let j = 0; j < listItems.length; j++) {
-            listItems[j].classList.remove('large');
+            listItems[j].classList.remove("large");
         }
         // Add 'large' class to the clicked item
-        this.classList.add('large');
+        this.classList.add("large");
     });
+}
+
+function showinfo(title, cgpa, year) {
+    const displayinfo = document.getElementById("target");
+    displayinfo.innerHTML = `
+<ul>
+        <li>Institution: ${title}</li>
+        <li>CGPA: ${cgpa}</li>
+        <li>Session: ${year}</li>
+    </ul>
+             
+             `;
 }

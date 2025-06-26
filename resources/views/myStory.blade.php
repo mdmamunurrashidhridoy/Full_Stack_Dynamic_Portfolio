@@ -73,7 +73,7 @@
     <div class="post">
       <h2>Top 5 Tips for CSS Beginners</h2>
       <p>
-        CSS can be a bit tricky at first. Here are my top 5 tips to make your stylesheets shine and keep your layout in control.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti accusantium error corporis, sapiente voluptates voluptate quas quia facere sunt quidem expedita eum sit nesciunt ipsam libero iure atque molestias.
       </p>
     </div>
   </div>

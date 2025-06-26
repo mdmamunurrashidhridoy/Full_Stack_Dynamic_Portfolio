@@ -18,6 +18,7 @@
             <a href="{{ url('/') }}" id="home">Home</a>
             <a href="{{ url('/education') }}">Education</a>
             <a href="{{ url('/specialization') }}">Specialization</a>
+            <a href="{{ url('/projects') }}">Projects</a>
             <a href="{{ url('/mystory') }}">My Story</a>
             <a href="{{ url('/contact') }}">Contacts</a>
         </div>
