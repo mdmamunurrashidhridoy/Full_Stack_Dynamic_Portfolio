@@ -45,6 +45,12 @@ Route::get('/register',function(){
     return view('auth.register');
 });
 
+Route::middleware(['auth'])->group(function(){
+    Route::get('/dashboard',function(){
+        return view('admin.dashboard');
+    });
+});
+
 use App\Http\Controllers\AuthController;
 
 Route::post('/login',[AuthController::class,'login'])->name('login');
