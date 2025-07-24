@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboradController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -46,12 +47,15 @@ Route::get('/register',function(){
 });
 
 Route::middleware(['auth'])->group(function(){
-    Route::get('/dashboard',function(){
-        return view('admin.dashboard');
-    });
+    Route::get('/dashboard',[DashboradController::class,'index']);
 });
 
 use App\Http\Controllers\AuthController;
 
 Route::post('/login',[AuthController::class,'login'])->name('login');
 Route::post('/register',[AuthController::class,'register'])->name('register');
+
+
+Route::get('/admin/contact', function() {
+    return view('admin.contact');
+});
